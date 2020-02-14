@@ -46,7 +46,7 @@ def cityreader(cities=[]):
     # print(f'after reader list: {reader}')
     # Starts reader list from line #2
     reader = reader[1:]
-    # Loops through reader and appends indexes 0,3 and 4 to the cities list
+    # Loops through reader and appends indexes 0,3 and 4 to the cities list by calling City class
     for i in reader:
       cities.append(City(i[0],float(i[3]),float(i[4])))
     # Returns cities list  
