@@ -27,7 +27,7 @@ class City():
     self.name = name
     self.lat = lat
     self.lon = lon
-# Creates str method to return name, lat and lon from cities.csv
+# Creates str method to return name, lat and lon from cities list
   def __str__(self):
     return f'({self.name}, {self.lat}, {self.lon})' 
      
@@ -51,7 +51,7 @@ def cityreader(cities=[]):
       cities.append(City(i[0],float(i[3]),float(i[4])))
     # Returns cities list  
     return cities
-# Calls cityreader class
+# Calls cityreader method with cities list
 cityreader(cities)
 
 # Print the list of cities (name, lat, lon), 1 record per line.
